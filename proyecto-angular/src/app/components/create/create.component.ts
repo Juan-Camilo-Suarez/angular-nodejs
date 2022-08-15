@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from '@angular/forms';
 //impottar el modelo
 import { Project } from 'src/app/models/project';
 //importar el servicio
@@ -25,7 +26,8 @@ export class CreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onSubmit(form: any){
+  onSubmit(form:any){
+    console.log(this.project);
 
 
   }
