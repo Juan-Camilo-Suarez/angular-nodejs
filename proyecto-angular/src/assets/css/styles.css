@@ -207,3 +207,18 @@ form input[disabled]{
 	opacity: 0.4;
 	cursor: not-allowed;
 }
+
+
+.success{
+	background: green;
+	color: white;
+}
+
+.message a{
+	color: white;
+}
+
+.failed{
+	background: red;
+	color: white;
+}
