@@ -18,5 +18,66 @@ body{
     font-family: "yanone", Arial, Helvetica, sans-serif;
     font-size: 20px;
     background: url('../img/pattern.png');
-    position: fixed;
+    background-attachment: fixed;
+}
+
+/* barra de navegacion */
+.clearfix{
+	float:none;
+	clear:both;
+}
+
+
+header{
+	display: block;
+	width: 100%;
+	height: 90px;
+	background: rgba(55 145 255 );
+	position: fixed;
+	text-transform: uppercase;
+}
+
+header ul{
+	display: block;
+	width: 40%;
+	height: inherit;
+	margin: 0px auto;
+	margin-top: -3px;
+}
+
+header ul li{
+	display: inline-block;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 88px;
+}
+header a{
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: inherit;
+	text-decoration: none;
+	color:white;
+	transition: all 300ms;
+}
+header a:hover,
+.actived{
+	background: rgba(0,0,0,0.8);
+}
+
+/*Logotipo*/
+
+#logo{
+	font-family: "finger";
+	font-size: 30px;
+}
+
+#logo a{
+	transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover{
+	background: transparent;
+	color: black;
+	transform:scale(1.50,1.50);
 }
