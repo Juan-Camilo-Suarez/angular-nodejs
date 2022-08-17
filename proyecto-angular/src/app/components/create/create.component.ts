@@ -17,6 +17,7 @@ export class CreateComponent implements OnInit {
   public title: string;
   public project: Project;
   public status: string = '';
+  public save_project: any;
 
   constructor(
     private projectService: ProjectService
@@ -33,6 +34,7 @@ export class CreateComponent implements OnInit {
       response => {
         console.log(response)
         if(response.project){
+          this.save_project = response.project
           this.status= "success";
           form.reset()
         }else{
